@@ -5,7 +5,6 @@ import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.AttributeSet;
-import android.util.SparseArray;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
@@ -14,7 +13,6 @@ import android.widget.LinearLayout;
 
 import java.util.List;
 
-import io.reactivex.disposables.Disposable;
 
 public class VerticalAutoScrollLayout extends LinearLayout {
 
@@ -68,7 +66,6 @@ public class VerticalAutoScrollLayout extends LinearLayout {
         return (int) (dpValue * scale + 0.5f);
     }
 
-    SparseArray<Disposable> tasks = new SparseArray<>();
 
     @SuppressLint("ClickableViewAccessibility")
     private View getView(final int position) {
